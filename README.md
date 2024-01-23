@@ -1,77 +1,69 @@
-[![Feature Flag, Remote Config and A/B Testing platform, Flagsmith](static-files/hero.png)](https://www.flagsmith.com/)
-
-[![Stars](https://img.shields.io/github/stars/flagsmith/flagsmith)](https://github.com/Flagsmith/flagsmith/stargazers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/flagsmith/flagsmith)](https://hub.docker.com/u/flagsmith)
-[![Docker Image Size](https://img.shields.io/docker/image-size/flagsmith/flagsmith)](https://hub.docker.com/r/flagsmith/flagsmith)
-[![Join the Discord chat](https://img.shields.io/discord/517647859495993347)](https://discord.gg/hFhxNtXzgm)
-[![Coverage](https://codecov.io/gh/Flagsmith/flagsmith/branch/main/graph/badge.svg?token=IyGii7VSdc)](https://codecov.io/gh/Flagsmith/flagsmith)
-<a href="https://depot.dev?utm_source=Flagsmith"><img src="https://depot.dev/badges/built-with-depot.svg" alt="Built with Depot" height="20"></a>
-
-[Flagsmith](https://flagsmith.com/) is an open source, fully featured, Feature Flag and Remote Config service. Use our
-hosted API, deploy to your own private cloud, or run on-premise.
-
-# Flagsmith
-
-Flagsmith makes it easy to create and manage features flags across web, mobile, and server side applications. Just wrap
-a section of code with a flag, and then use Flagsmith to toggle that feature on or off for different environments, users
-or user segments.
-
-Get up and running in less than a minute:
-
-```bash
-curl -o docker-compose.yml https://raw.githubusercontent.com/Flagsmith/flagsmith/main/docker-compose.yml
-docker-compose -f docker-compose.yml up
-```
-
-The application will bootstrap an admin user, organisation, and project for you. You'll find a link to set your password
-in your Compose logs:
-
-```txt
-Superuser "admin@example.com" created successfully.
-Please go to the following page and choose a password: https://localhost:8000/password-reset/confirm/.../...
-```
-
-![Flagsmith Screenshot](static-files/screenshot.png)
-
-## Features
-
-- **Feature flags**. Release features with confidence through phased roll-outs.
-- **Remote config**. Easily toggle individual features on and off, and make changes without deploying new code.
-- **A/B and Multivariate Testing**. Use segments to run A/B and multivariate tests on new features. With segments, you
-  can also introduce beta programs to get early user feedback.
-- **Organization Management**. Organizations, projects, and roles for team members help keep your deployment organized.
-- **Integrations**. Easily enhance Flagsmith with your favourite tools.
-
-## Trying Flagsmith
-
-### Flagsmith hosted SaaS
-
-You can try our hosted version for free at https://flagsmith.com/
-
-### Flagsmith Open Source
-
-The Flagsmith API is built using Python 3, Django 2, and DjangoRestFramework 3. You can try the application out using:
-
-- [Docker](https://github.com/Flagsmith/flagsmith/blob/main/docker-compose.yml)
-- [Kubernetes](https://github.com/Flagsmith/flagsmith-charts)
-- [Redhat OpenShift](https://operatorhub.io/operator/flagsmith)
-
-We also have options for deploying to AWS, GCP, Azure and On-Premise. If you need help getting up and running, please
-[get in touch!](mailto:support@flagsmith.com)
-
-## Overview
-
-This repository is formed of 2 core components, the REST API (found in `/api`) and the web-based administrator dashboard
-(found in `/frontend`) that you can use to manage Flagsmith. Technical documentation for each component can be found at
-the [API](https://docs.flagsmith.com/deployment/locally-api) and
-[Frontend](https://docs.flagsmith.com/deployment/locally-frontend) pages within our
-[Documentation](https://docs.flagsmith.com/)
-
-These two components run as separate applications. The web-based dashboard is a single page app that communicates via
-REST calls to the API.
-
-## Resources
-
-- [Website](https://flagsmith.com/)
-- [Documentation](https://docs.flagsmith.com/)
-- If you have any questions about our projects you can email [support@flagsmith.com](mailto:support@flagsmith.com)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://www.flagsmith.com/" rel="nofollow"><img src="/Flagsmith/flagsmith/raw/main/static-files/hero.png" alt="功能标志、远程配置和 A/B 测试平台、Flagsmith" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/Flagsmith/flagsmith/stargazers"><img src="https://camo.githubusercontent.com/7a63dbcf1b28e2f3d04cd5aa0ccdcd4d52c513761b6fd3617db9749c9fb4b353/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f666c6167736d6974682f666c6167736d697468" alt="星星" data-canonical-src="https://img.shields.io/github/stars/flagsmith/flagsmith" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/u/flagsmith" rel="nofollow"><img src="https://camo.githubusercontent.com/4476d836b9d0180c45902790da0b7aafbbeb6d56a9b0f946384dd17e934cf856/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f666c6167736d6974682f666c6167736d697468" alt="Docker 拉取" data-canonical-src="https://img.shields.io/docker/pulls/flagsmith/flagsmith" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/flagsmith/flagsmith" rel="nofollow"><img src="https://camo.githubusercontent.com/bfbf33487aaba96d578e244bc1cdf49e3024b5386f5f96cdc0a276686e94fc73/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f696d6167652d73697a652f666c6167736d6974682f666c6167736d697468" alt="Docker 镜像大小" data-canonical-src="https://img.shields.io/docker/image-size/flagsmith/flagsmith" style="max-width: 100%;"></a>
+<a href="https://discord.gg/hFhxNtXzgm" rel="nofollow"><img src="https://camo.githubusercontent.com/a0b8e4078bd3c15c811847687c79405e247c3a9fa30e734cb22b32be041057e1/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f353137363437383539343935393933333437" alt="加入 Discord 聊天" data-canonical-src="https://img.shields.io/discord/517647859495993347" style="max-width: 100%;"></a>
+<a href="https://codecov.io/gh/Flagsmith/flagsmith" rel="nofollow"><img src="https://camo.githubusercontent.com/4a08947dc6dae61d2bed608c5f29ddf94683eaa44786fba662570dff384af183/68747470733a2f2f636f6465636f762e696f2f67682f466c6167736d6974682f666c6167736d6974682f6272616e63682f6d61696e2f67726170682f62616467652e7376673f746f6b656e3d49794769693756536463" alt="覆盖范围" data-canonical-src="https://codecov.io/gh/Flagsmith/flagsmith/branch/main/graph/badge.svg?token=IyGii7VSdc" style="max-width: 100%;"></a>
+<a href="https://depot.dev?utm_source=Flagsmith" rel="nofollow"><img src="https://camo.githubusercontent.com/eeb741627baf539bb25a14841c52c20c2c044c9daf70a0b00ad4ddd8ac142fc7/68747470733a2f2f6465706f742e6465762f6261646765732f6275696c742d776974682d6465706f742e737667" alt="与仓库一起建造" height="20" data-canonical-src="https://depot.dev/badges/built-with-depot.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flagsmith</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一个开源、功能齐全的功能标记和远程配置服务。</font><font style="vertical-align: inherit;">使用我们的托管 API、部署到您自己的私有云或在本地运行。</font></font></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-flagsmith" class="anchor" aria-hidden="true" tabindex="-1" href="#flagsmith"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">旗匠</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flagsmith 可以轻松地跨 Web、移动和服务器端应用程序创建和管理功能标志。</font><font style="vertical-align: inherit;">只需用标志包装一段代码，然后使用 Flagsmith 为不同的环境、用户或用户段打开或关闭该功能。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不到一分钟即可启动并运行：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>curl -o docker-compose.yml https://raw.githubusercontent.com/Flagsmith/flagsmith/main/docker-compose.yml
+docker-compose -f docker-compose.yml up</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="curl -o docker-compose.yml https://raw.githubusercontent.com/Flagsmith/flagsmith/main/docker-compose.yml
+docker-compose -f docker-compose.yml up" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该应用程序将为您引导管理员用户、组织和项目。</font><font style="vertical-align: inherit;">您将在 Compose 日志中找到用于设置密码的链接：</font></font></p>
+<div class="highlight highlight-text-adblock notranslate position-relative overflow-auto" dir="auto"><pre>Superuser "admin@example.com" created successfully.
+Please go to the following page and choose a password: https://localhost:8000/password-reset/confirm/.../...</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="Superuser &quot;admin@example.com&quot; created successfully.
+Please go to the following page and choose a password: https://localhost:8000/password-reset/confirm/.../..." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/Flagsmith/flagsmith/blob/main/static-files/screenshot.png"><img src="/Flagsmith/flagsmith/raw/main/static-files/screenshot.png" alt="旗匠截图" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-features" class="anchor" aria-hidden="true" tabindex="-1" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能标志</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">通过分阶段推出充满信心地发布功能。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">远程配置</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">轻松打开和关闭各个功能，并进行更改，而无需部署新代码。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A/B 和多变量测试</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">使用分段对新功能运行 A/B 和多变量测试。</font><font style="vertical-align: inherit;">通过细分，您还可以引入测试版程序以获得早期用户反馈。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组织管理</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">团队成员的组织、项目和角色有助于保持部署井井有条。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集成</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">使用您最喜欢的工具轻松增强 Flagsmith。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-trying-flagsmith" class="anchor" aria-hidden="true" tabindex="-1" href="#trying-flagsmith"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尝试旗匠</font></font></h2>
+<h3 tabindex="-1" dir="auto"><a id="user-content-flagsmith-hosted-saas" class="anchor" aria-hidden="true" tabindex="-1" href="#flagsmith-hosted-saas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flagsmith 托管 SaaS</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;">您可以在https://flagsmith.com/</font></a><font style="vertical-align: inherit;">免费试用我们的托管版本</font></font><a href="https://flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-flagsmith-open-source" class="anchor" aria-hidden="true" tabindex="-1" href="#flagsmith-open-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flagsmith 开源</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flagsmith API 是使用 Python 3、Django 2 和 DjangoRestFramework 3 构建的。您可以使用以下方式尝试该应用程序：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/Flagsmith/flagsmith/blob/main/docker-compose.yml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">码头工人</font></font></a></li>
+<li><a href="https://github.com/Flagsmith/flagsmith-charts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">库伯内斯</font></font></a></li>
+<li><a href="https://operatorhub.io/operator/flagsmith" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">红帽 OpenShift</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们还提供部署到 AWS、GCP、Azure 和本地部署的选项。</font><font style="vertical-align: inherit;">如果您需要启动和运行方面的帮助，请
+</font></font><a href="mailto:support@flagsmith.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们！</font></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-overview" class="anchor" aria-hidden="true" tabindex="-1" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库由 2 个核心组件组成：REST API（在 参考资料中找到</font></font><code>/api</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）和基于 Web 的管理员仪表板（在 参考资料中找到</font></font><code>/frontend</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">），您可以使用它们来管理 Flagsmith。</font><font style="vertical-align: inherit;">每个组件的技术文档可以在我们
+</font><a href="https://docs.flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;">文档中的</font></a></font><a href="https://docs.flagsmith.com/deployment/locally-api" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和
+</font></font><a href="https://docs.flagsmith.com/deployment/locally-frontend" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前端</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面找到</font></font><a href="https://docs.flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这两个组件作为单独的应用程序运行。</font><font style="vertical-align: inherit;">基于 Web 的仪表板是一个单页应用程序，通过 REST 调用 API 进行通信。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-resources" class="anchor" aria-hidden="true" tabindex="-1" href="#resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源</font></font></h2>
+<ul dir="auto">
+<li><a href="https://flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站</font></font></a></li>
+<li><a href="https://docs.flagsmith.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您对我们的项目有任何疑问，您可以发送电子邮件至</font></font><a href="mailto:support@flagsmith.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">support@flagsmith.com</font></font></a></li>
+</ul>
+</article></div>
